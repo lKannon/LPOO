@@ -3,9 +3,12 @@ public class CompraDebito extends Compra {
 
     public CompraDebito(String idCartao, int data, String identificador, float valor) {
         this.idCartao = idCartao;
-        this.data = data;
-        this.identificador = identificador;
-        this.valor=valor;
+        setIdCartao(idCartao);
+        setData(data);
+        setIdentificador(identificador);
+        //this.data = data;
+        //this.identificador = identificador;
+        //this.valor=valor;
     }
 
     public String getIdCartao() {

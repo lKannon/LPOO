@@ -3,17 +3,17 @@
  */
 public class Compra {
 
-    int data;
-    String identificador;
-    float valor;
+    private int data;
+    private String idCompra;
+    private float valor;
 
-    /*
-     * public Compra(int data, String identificador, float valor){
-     * this.data = data;
-     * this.identifiador = identificador;
-     * this.valor=valor;
-     * }
-     */
+    
+     public Compra(int data, String idCompra   , float valor){
+        this.data = data;
+        this.idCompra   = idCompra   ;
+        this.valor=valor;
+        }
+     
 
     public int getData() {
         return data;
@@ -23,12 +23,12 @@ public class Compra {
         this.data = data;
     }
 
-    public String getIdentificador() {
-        return identificador;
+    public String getidCompra  () {
+        return idCompra;
     }
 
-    public void setIdentificador(String identificador) {
-        this.identificador = identificador;
+    public void setidCompra(String idCompra) {
+        this.idCompra   = idCompra   ;
     }
 
     public float getValor() {
@@ -41,7 +41,7 @@ public class Compra {
 
     @Override
     public String toString() {
-        return "Compra [data=" + data + ", identificador=" + identificador + ", valor=" + valor + "]";
+        return "Compra [data=" + data + ", idCompra=" + idCompra    + ", valor=" + valor + "]";
     }
 
 }

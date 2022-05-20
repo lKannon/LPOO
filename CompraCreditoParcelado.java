@@ -7,9 +7,14 @@ public class CompraCreditoParcelado extends Compra {
         this.idCartao = idCartao;
         this.mesFatura = mesFatura;
         this.nVezes = nVezes;
-        this.data = data;
+        setData(data);
+        setValor(valor);
+        setIdentificador(identificador);
+        
+        /*this.data = data;
         this.identificador = identificador;
         this.valor=valor;
+        */
     }
 
     public String getIdCartao() {
