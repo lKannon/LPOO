@@ -1,7 +1,7 @@
 /*
  * Compra
  */
-public class Compra {
+public abstract class Compra {
 
     private int data;
     private String idCompra;

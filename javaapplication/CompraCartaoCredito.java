@@ -1,4 +1,4 @@
-public class CompraCartaoCredito extends CompraCartao {
+public abstract class CompraCartaoCredito extends CompraCartao {
     
     int diaFatura;
 

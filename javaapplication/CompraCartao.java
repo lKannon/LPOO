@@ -1,9 +1,9 @@
-public class CompraCartao extends Compra {
+public abstract class CompraCartao extends Compra {
     
     String nomeBanco;
 
     public CompraCartao(int data, String idCompra, float valor, Conta conta){
-        super(data, idCompra, valor, conta);
+        super(data, idCompra, valor);
         this.nomeBanco = nomeBanco;
     }
 
