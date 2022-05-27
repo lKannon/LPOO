@@ -1,3 +1,5 @@
+//package javaapplication;
+
 public class CompraCartaoCreditoParcelada extends CompraCartaoCredito {
     int nParcelas;
     float valorParcela;
@@ -25,5 +27,5 @@ public class CompraCartaoCreditoParcelada extends CompraCartaoCredito {
         this.valorParcela = valorParcela;
     }
 
-}
+}  
    
