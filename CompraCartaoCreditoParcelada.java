@@ -4,8 +4,8 @@ public class CompraCartaoCreditoParcelada extends CompraCartaoCredito {
     int nParcelas;
     float valorParcela;
 
-    public CompraCartaoCreditoParcelada (int data, String idCompra, float valor, Conta conta, int nParcelas) {
-        super(data, idCompra, valor, conta);
+    public CompraCartaoCreditoParcelada (int data, String idCompra, float valor, Conta conta,int diaFatura, int nParcelas, float valorParcela) {
+        super(data, idCompra, valor, conta, diaFatura);
         this.nParcelas = nParcelas;
         this.valorParcela = valorParcela;
 

@@ -2,7 +2,7 @@
 
 public class CompraCartaoCreditoAVista extends CompraCartaoCredito{
 
-    public CompraCartaoCreditoAVista(int data, String idCompra, float valor, Conta conta){
-        super(data, idCompra, valor, conta);
+    public CompraCartaoCreditoAVista(int data, String idCompra, float valor, Conta conta, int diaFatura){
+        super(data, idCompra, valor, conta, diaFatura);
     }
 }

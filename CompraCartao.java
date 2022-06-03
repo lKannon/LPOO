@@ -1,20 +1,25 @@
 //package javaapplication;
 
-public abstract class CompraCartao extends Compra {
+public abstract class CompraCartao extends Compras {
     
-    String nomeBanco;
+    Conta conta;
 
     public CompraCartao(int data, String idCompra, float valor, Conta conta){
         super(data, idCompra, valor);
-        this.nomeBanco = nomeBanco;
+        this.conta = conta;
     }
 
-    public String getnomeBanco(){
-        return nomeBanco;
+    public Conta getConta() {
+        return conta;
     }
 
-    public void setnomeBanco(String nomeBanco){
-        this.nomeBanco = nomeBanco;
+    public void setConta(Conta conta) {
+        this.conta = conta;
+    }
+
+    @Override
+    public String toString() {
+        return "CompraCartao [conta=" + conta + "]";
     }
     
 }

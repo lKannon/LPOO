@@ -4,7 +4,7 @@ public abstract class CompraCartaoCredito extends CompraCartao {
     
     int diaFatura;
 
-    public CompraCartaoCredito(int data, String idCompra, float valor, Conta conta) {
+    public CompraCartaoCredito(int data, String idCompra, float valor, Conta conta, int diaFatura) {
         super(data, idCompra, valor, conta);
         this.diaFatura = diaFatura;
         
