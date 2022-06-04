@@ -64,6 +64,18 @@ public void setTaxaMensal(float taxaMensal) {
     this.taxaMensal = taxaMensal;
 }
 
+public void debitar(float valor){
+    setSaldo(getSaldo()-valor);
+}
+
+public void reterLimiteDisp(float valor){//O que faz essa func?
+
+}
+
+public void devolverLimiteDisp(float valor){//O que faz essa func?
+
+}
+
     @Override
     public String toString() {
         return "Conta [diaFatura=" + diaFatura + ", limite=" + limite + ", limiteDisponivel=" + limiteDisponivel

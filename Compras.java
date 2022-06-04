@@ -8,8 +8,11 @@ public abstract class Compras {
     private int data;
     private String idCompra;
     private float valor;
-    static ArrayList<Compras> listaCompra;
+    static ArrayList<Compras> listaCompra = new ArrayList<Compras>();
     
+    
+    
+
      public Compras(int data, String idCompra   , float valor){
         this.data = data;
         this.idCompra   = idCompra   ;

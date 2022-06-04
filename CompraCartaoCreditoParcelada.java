@@ -1,8 +1,8 @@
 //package javaapplication;
 
 public class CompraCartaoCreditoParcelada extends CompraCartaoCredito {
-    int nParcelas;
-    float valorParcela;
+    private int nParcelas;
+    private float valorParcela;
 
     public CompraCartaoCreditoParcelada (int data, String idCompra, float valor, Conta conta,int diaFatura, int nParcelas, float valorParcela) {
         super(data, idCompra, valor, conta, diaFatura);
@@ -27,5 +27,8 @@ public class CompraCartaoCreditoParcelada extends CompraCartaoCredito {
         this.valorParcela = valorParcela;
     }
 
+    public void calcValorParcela(){
+        setValorParcela(getValor()/getnParcelas());
+    }
 }  
    

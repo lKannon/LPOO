@@ -16,7 +16,9 @@ public class JavaApplication {
         CompraCartaoCreditoParcelada c3 = new CompraCartaoCreditoParcelada(20220513, "cantina", 13f, nuBank, 03, 2, 107f);
         System.out.println(nuBank.toString());
        
-        
+        System.out.println(c1.getValor());
+        System.out.println(c2.getData());
+        System.out.println(c3.getValorParcela());
         
     }
 }
