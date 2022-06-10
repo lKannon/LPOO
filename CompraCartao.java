@@ -1,6 +1,6 @@
 //package javaapplication;
 
-public abstract class CompraCartao extends Compras {
+public abstract class CompraCartao extends Compra {
     
     Conta conta;
 
