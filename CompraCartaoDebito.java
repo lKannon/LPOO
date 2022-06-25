@@ -1,11 +1,11 @@
-import java.util.ArrayList;
+//import java.util.ArrayList;
 
 //package javaapplication;
 
 public class CompraCartaoDebito extends CompraCartao {
-    static ArrayList<CompraCartaoDebito> listaCompraDebito = new ArrayList<CompraCartaoDebito>();
+    //static ArrayList<CompraCartaoDebito> listaCompraDebito = new ArrayList<CompraCartaoDebito>();
 
-    public CompraCartaoDebito(int data, String idCompra, float valor, Conta conta) {
+    public CompraCartaoDebito(Data data, String idCompra, float valor, Conta conta) {
        super(data, idCompra, valor, conta);
        listaCompra.add(this);
        

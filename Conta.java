@@ -1,6 +1,6 @@
 //package javaapplication;
 
-public class Conta {
+public class Conta implements InterfConta {
     private float saldo;
     private String nomeBanco;
     private float limite;
@@ -69,13 +69,13 @@ public void debitar(float valor){
 }
 
 public void reterLimiteDisp(float valor){//O que faz essa func?
-
+    setLimiteDisponivel(getLimiteDisponivel()-valor);
 }
 
 public void devolverLimiteDisp(float valor){//O que faz essa func?
-
+    setLimiteDisponivel(getLimiteDisponivel()+valor);
 }
-
+   
     @Override
     public String toString() {
         return "Conta [diaFatura=" + diaFatura + ", limite=" + limite + ", limiteDisponivel=" + limiteDisponivel

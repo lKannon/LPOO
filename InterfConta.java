@@ -1,16 +1,16 @@
-public class InterfConta {
+public interface InterfConta {
     
-    public void debitar(float valor){
+     void debitar(float valor);
         
-    }
+    
 
-    public void reterLimiteDisp(float valor){
+     void reterLimiteDisp(float valor);
 
-    }
+    
 
-    public void devolverLimiteDisp(float valor){
+     void devolverLimiteDisp(float valor);
 
-    }
+    
 
 
 }

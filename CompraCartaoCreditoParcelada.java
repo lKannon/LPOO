@@ -1,34 +1,45 @@
+import java.util.ArrayList;
+
 //package javaapplication;
 
 public class CompraCartaoCreditoParcelada extends CompraCartaoCredito {
     private int nParcelas;
-    private float valorParcela;
+    private float valorTotal; //Possivelmente é o valor da parcela
 
-    public CompraCartaoCreditoParcelada (int data, String idCompra, float valor, Conta conta,int diaFatura, int nParcelas, float valorParcela) {
-        super(data, idCompra, valor, conta, diaFatura);
+    public CompraCartaoCreditoParcelada (Data data, String idCompra, float valor, Conta conta, int nParcelas) {
+        super(data, idCompra, valor, conta);
         this.nParcelas = nParcelas;
-        this.valorParcela = valorParcela;
+    }
 
+    public CompraCartaoCreditoParcelada(listaCompras, String idCompra, float valor, Conta conta, int nVezes) {
     }
 
     public int getnParcelas() {
         return nParcelas;
     }
 
+
+
     public void setnParcelas(int nParcelas) {
         this.nParcelas = nParcelas;
     }
 
-    public float getValorParcela() {
-        return valorParcela;
+
+
+    public float getValorTotal() {
+        return valorTotal;
     }
 
-    public void setValorParcela(float valorParcela) {
-        this.valorParcela = valorParcela;
+
+
+    public void setValorTotal(float valorTotal) {
+        this.valorTotal = valorTotal;
     }
+
+
 
     public void calcValorParcela(){
-        setValorParcela(getValor()/getnParcelas());
+        setValorTotal(getnParcelas());
     }
 }  
    

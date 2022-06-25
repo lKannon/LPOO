@@ -1,10 +1,10 @@
 //package javaapplication;
 
-public abstract class CompraCartao extends Compra {
+public abstract class CompraCartao extends Compras {
     
-    Conta conta;
+    private Conta conta;
 
-    public CompraCartao(int data, String idCompra, float valor, Conta conta){
+    public CompraCartao(Data data, String idCompra, float valor, Conta conta){
         super(data, idCompra, valor);
         this.conta = conta;
     }

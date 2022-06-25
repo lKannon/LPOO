@@ -1,55 +1,42 @@
 /*
- * Compra
+ * Compras
  */
 //package javaapplication;
 import java.util.ArrayList;
-public abstract class Compras {
+public class Compras {
 
-    private int data;
+    private Data data;
+    private String dataStr;
     private String idCompra;
     private float valor;
     static ArrayList<Compras> listaCompra = new ArrayList<Compras>();
     
     
     
-
-     public Compras(int data, String idCompra   , float valor){
+    
+//Verificar o tipo de compra para o construtor e adicionar a chamada new excluindo a adição de várias compras na lista
+     public Compras(Data data, String idCompra, float valor, String Conta, int nParcelas){
         this.data = data;
         this.idCompra   = idCompra   ;
-        this.valor=valor;
-        listaCompra.add(this);
-        }
-     
-
-    public int getData() {
-        return data;
-    }
-
-    public void setData(int data) {
-        this.data = data;
-    }
-
-    public String getidCompra  () {
-        return idCompra;
-    }
-
-    public void setidCompra(String idCompra) {
-        this.idCompra   = idCompra   ;
-    }
-
-    public float getValor() {
-        return valor;
-    }
-
-    public void setValor(float valor) {
         this.valor = valor;
-    }
-    //Adicionar compra *****************************************
+        listaCompra.add(this);
+        //new CompraCartaoCredito(data , Compras, valor, nomeBanco, fatura)
+        
+        }
     
 
-    @Override
-    public String toString() {
-        return "Compra [data=" + data + ", idCompra=" + idCompra    + ", valor=" + valor + "]";
+    public Compras(Data data, String idCompra, float valor, String Conta){
+        this.data = data;
+        this.idCompra = idCompra;
+        listaCompra.add(this);
     }
+    public Compras(Data data, String idCompra, float valor){
+        this.data = data;
+        this.idCompra = idCompra;
+        this.valor = valor;
+        listaCompra.add(this);
+    }
+    
+        
 
 }
